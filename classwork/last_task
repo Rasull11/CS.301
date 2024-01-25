@@ -1,4 +1,4 @@
-const express = require('express') //ES5 ES6 (JavaScript)
+const express = require('express') 
 require('dotenv').config()
 const BodyParser = require('body-parser')
 require('colors')
@@ -98,5 +98,4 @@ app.patch('/students/:id', (req, res) => {
 
 
 const PORT = 8000
-//process.env.PORT1 || process.env.PORT2
 app.listen(PORT, () => console.log(`Server is running: http://localhost:${PORT}`.bold.blue))
